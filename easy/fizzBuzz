@@ -1,0 +1,15 @@
+class Solution(object):
+    def fizzBuzz(self, n):
+        arr=[]
+        nums=1
+        while nums<= n:
+            if nums%3==0 and nums%5==0:
+                arr.append("FizzBuzz")
+            elif nums%3==0:
+                arr.append("Fizz")
+            elif nums%5==0:
+                arr.append("Buzz")
+            else:
+                arr.append(str(nums))
+            nums+=1
+        return arr
